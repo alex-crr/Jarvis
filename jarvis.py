@@ -1,12 +1,11 @@
 from RealtimeSTT import AudioToTextRecorder
-import assist
+import assist_local as assist
 import time
-import tools
 
 if __name__ == '__main__':
-    recorder = AudioToTextRecorder(spinner=False, model="tiny.en", language="en", post_speech_silence_duration =0.1, silero_sensitivity = 0.4)
-    hot_words = ["jarvis"]
-    skip_hot_word_check = False
+    recorder = AudioToTextRecorder(spinner=True, model="tiny.en", language="en", post_speech_silence_duration =0.2, silero_sensitivity = 0.4)
+    hot_words = ["jarvis", "javis", "jovis" , "javi", "jovi", "chavez", "minifab", "jollis"]
+    skip_hot_word_check = True
     print("Say something...")
     while True:
         current_text = recorder.text()
@@ -15,15 +14,17 @@ if __name__ == '__main__':
                     #make sure there is text
                     if current_text:
                         print("User: " + current_text)
-                        recorder.stop()
+                        recorder.stop()                        
                         #get time
                         current_text = current_text + " " + time.strftime("%Y-m-%d %H-%M-%S")
                         response = assist.ask_question_memory(current_text)
-                        print(response)
+                        print('Jarvis: ' + response)
                         speech = response.split('#')[0]
-                        done = assist.TTS(speech)
-                        skip_hot_word_check = True if "?" in response else False
+                        #done = assist.TTS(speech)
+                        assist.speak(speech)
+                        #skip_hot_word_check = True if "?" in response else False
                         if len(response.split('#')) > 1:
                             command = response.split('#')[1]
-                            tools.parse_command(command)
+                            #tools.parse_command(command)
                         recorder.start()
+ 

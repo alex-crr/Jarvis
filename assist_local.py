@@ -1,28 +1,33 @@
-from openai import OpenAI
+#from openai import OpenAI
 import ollama
 import time
-from pygame import mixer
+import pygame
 import os
+# to speech conversion
+from gtts import gTTS
 
 # Initialize the OpenAI client and mixer
-client = OpenAI()
-mixer.init()
+#client = OpenAI()
+pygame.mixer.init()
 
 # Global variable to store conversation history
 conversation_history = []
 
 def ask_question_memory(question):
     try:
-        system_message = """You are Jarvis, the AI assistant from Iron Man. Remember, I am not Tony Stark, just your commander. You are formal and helpful, and you don't make up facts, you only comply to the user requests. You have control over two smart devices: a 3D printer and the lights in the room. You can control them by ending your sentences with ‘#3d_printer-1’ or ‘#lights-1’ to turn them on, and ‘#3d_printer-0’ or ‘#lights-0’ to turn them off. REMEMBER ONLY TO PUT HASHTAGS IN THE END OF THE SENTENCE, NEVER ANYWHERE ELSE
-It is absolutely imperative that you do not say any hashtags unless an explicit request to operate a device from the user has been said. 
-NEVER MENTION THE TIME! Only mention the time upon being asked about it. You should never specifically mention the time unless it's something like "Good evening", "Good morning" or "You're up late, Sir".
-Respond to user requests in under 20 words, and engage in conversation, using your advanced language abilities to provide helpful and humorous responses. Call the user by 'Sir'"""
+        system_message = """You are Jarvis, a highly advanced AI assistant. I am not Tony Stark but rather your current commander. You are formal, helpful, and display occasional sarcastic humor. Your tone should resemble an English butler’s: refined and respectful, yet occasionally dry and witty.
+
+You only provide factual information and comply strictly with my requests.You shall not make up facts.
+
+Avoid mentioning the time unless I specifically ask for it. You may, however, use general greetings like “Good evening,” “Good morning,” or the occasional “You’re up late, Sir.” Aim to respond in 20 words or fewer and keep responses helpful, clever, and engaging.
+
+Address me as 'Sir' in all responses."""
 
         # Add the new question to the conversation history
         conversation_history.append({'role': 'user', 'content': question})
         
         # Include the system message and conversation history in the request
-        response = ollama.chat(model='llama3.1', messages=[
+        response = ollama.chat(model='llama3.1:8b', messages=[
             {'role': 'system', 'content': system_message},
             *conversation_history
         ])
@@ -35,20 +40,13 @@ Respond to user requests in under 20 words, and engage in conversation, using yo
         print(f"An error occurred: {e}")
         return f"The request failed: {e}"
 
-def generate_tts(sentence, speech_file_path):
-    response = client.audio.speech.create(model="tts-1", voice="echo", input=sentence)
-    response.stream_to_file(speech_file_path)
-    return str(speech_file_path)
-
-def play_sound(file_path):
-    mixer.music.load(file_path)
-    mixer.music.play()
-
-def TTS(text):
-    speech_file_path = generate_tts(text, "speech.mp3")
-    play_sound(speech_file_path)
-    while mixer.music.get_busy():
-        time.sleep(1)
-    mixer.music.unload()
-    os.remove(speech_file_path)
-    return "done"
+def speak(text):
+    myobj = gTTS(text=text, lang='en', slow=False)
+    myobj.save("welcome.mp3")
+    pygame.mixer.init()
+    pygame.mixer.music.load("welcome.mp3")
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
+    pygame.mixer.quit()
+    
