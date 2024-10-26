@@ -3,8 +3,8 @@ This Python script, jarvis.py, emulates a conversational AI assistant similar to
 
 # Features
 Real-Time Speech Recognition: Leveraging Whisper V3 to convert spoken language into text.
-Intelligent Response Generation: Uses GPT-3.5 Turbo to generate relevant responses based on the user's input.
-Speech Output: Converts text responses back into speech using OpenAI's TTS, providing a seamless conversational experience.
+Local Response Generation: Using ollama's python api to generate fully local response
+Speech Output: Converts text responses back into speech using RealTimeTTS
 Hotword Detection: The script actively listens for specific trigger words to initiate interaction.
 
 # Requirements

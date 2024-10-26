@@ -1,0 +1,834 @@
+2024-10-26 14:43:34.883 - RealTimeSTT: root - INFO - Starting RealTimeSTT
+2024-10-26 14:43:34.940 - RealTimeSTT: root - INFO - Initializing audio recording (creating pyAudio input stream, sample rate: 16000 buffer size: 512
+2024-10-26 14:43:34.985 - RealTimeSTT: root - INFO - Initializing WebRTC voice with Sensitivity 3
+2024-10-26 14:43:34.985 - RealTimeSTT: root - DEBUG - WebRTC VAD voice activity detection engine initialized successfully
+2024-10-26 14:43:35.357 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg6
+2024-10-26 14:43:35.358 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg6 extension.
+Traceback (most recent call last):
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\alexa\AppData\Local\packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\lib\libtorio_ffmpeg6.pyd' (or one of its dependencies). Try using the full path with constructor syntax.
+2024-10-26 14:43:35.360 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg5
+2024-10-26 14:43:35.361 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg5 extension.
+Traceback (most recent call last):
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\alexa\AppData\Local\packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\lib\libtorio_ffmpeg5.pyd' (or one of its dependencies). Try using the full path with constructor syntax.
+2024-10-26 14:43:35.361 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg4
+2024-10-26 14:43:35.362 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg4 extension.
+Traceback (most recent call last):
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 108, in _find_versionsed_ffmpeg_extension
+    _load_lib(lib)
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 94, in _load_lib
+    torch.ops.load_library(path)
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torch\_ops.py", line 1350, in load_library
+    ctypes.CDLL(path)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\ctypes\__init__.py", line 376, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: Could not find module 'C:\Users\alexa\AppData\Local\packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\lib\libtorio_ffmpeg4.pyd' (or one of its dependencies). Try using the full path with constructor syntax.
+2024-10-26 14:43:35.363 - RealTimeSTT: torio._extension.utils - DEBUG - Loading FFmpeg
+2024-10-26 14:43:35.363 - RealTimeSTT: torio._extension.utils - DEBUG - Failed to load FFmpeg extension.
+Traceback (most recent call last):
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 116, in _find_ffmpeg_extension
+    ext = _find_versionsed_ffmpeg_extension(ffmpeg_ver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\torio\_extension\utils.py", line 106, in _find_versionsed_ffmpeg_extension
+    raise RuntimeError(f"FFmpeg{version} extension is not available.")
+RuntimeError: FFmpeg extension is not available.
+2024-10-26 14:43:35.485 - RealTimeSTT: root - DEBUG - Silero VAD voice activity detection engine initialized successfully
+2024-10-26 14:43:35.486 - RealTimeSTT: root - DEBUG - Starting realtime worker
+2024-10-26 14:43:35.486 - RealTimeSTT: root - DEBUG - Waiting for main transcription model to start
+2024-10-26 14:43:38.264 - RealTimeSTT: root - DEBUG - Main transcription model ready
+2024-10-26 14:43:38.265 - RealTimeSTT: root - DEBUG - RealtimeSTT initialization completed successfully
+2024-10-26 14:43:38.270 - RealTimeSTT: comtypes - DEBUG - CoInitializeEx(None, 2)
+2024-10-26 14:43:38.286 - RealTimeSTT: comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\alexa\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\site-packages\\comtypes\\gen\\__init__.py'>
+2024-10-26 14:43:38.286 - RealTimeSTT: comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\alexa\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\comtypes\gen'
+2024-10-26 14:43:38.312 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPVoice -> {96749377-3391-11D2-9EE3-00C04F797396}
+2024-10-26 14:43:38.312 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({96749377-3391-11D2-9EE3-00C04F797396}, clsctx=None, interface=None)
+2024-10-26 14:43:38.357 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229c2509260 at 229b434ba50>)
+2024-10-26 14:43:38.357 - RealTimeSTT: comtypes.client - DEBUG - Does implement IProvideClassInfo
+2024-10-26 14:43:38.358 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {269316D8-57BD-11D2-9EEE-00C04F797396}
+2024-10-26 14:43:38.358 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25092a0 at 229b4cb59d0>
+2024-10-26 14:43:38.358 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:38.358 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechVoice'>
+2024-10-26 14:43:38.358 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechVoice) ptr=0x229c25092a0 at 229b4cb5950>
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IProvideClassInfo) ptr=0x229c25092c0 at 229b434bd50>
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b32465c8 at 229b4cb5650>
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246620 at 229b4cb57d0>
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229b4cb59d0>
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c2509260 at 229b434ba50>
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes.client._events - DEBUG - <POINTER(ISpeechVoice) ptr=0x229c25092a0 at 229b4cb5950> using sinkinterface from clsid <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IProvideClassInfo2) ptr=0x229c25092c0 at 229b434ba50>
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>: _ISpeechVoiceEvents.VoiceChange not implemented
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>: _ISpeechVoiceEvents.Bookmark not implemented
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>: _ISpeechVoiceEvents.Sentence not implemented
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>: _ISpeechVoiceEvents.Phoneme not implemented
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>: _ISpeechVoiceEvents.Viseme not implemented
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>: _ISpeechVoiceEvents.AudioLevel not implemented
+2024-10-26 14:43:38.359 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>: _ISpeechVoiceEvents.EnginePrivate not implemented
+2024-10-26 14:43:38.360 - RealTimeSTT: comtypes.client._events - DEBUG - Start advise <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4._ISpeechVoiceEvents'>
+2024-10-26 14:43:38.360 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>.QueryInterface({A372ACD1-3BEF-4BBD-8FFB-CB3E2B416AF8}) -> S_OK
+2024-10-26 14:43:38.360 - RealTimeSTT: comtypes._comobject - DEBUG - 1 active COM objects: Added   <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>
+2024-10-26 14:43:38.360 - RealTimeSTT: comtypes._comobject - DEBUG - <comtypes.client._events.CreateEventReceiver.<locals>.Sink object at 0x00000229B4C7D250>.AddRef() -> 1
+2024-10-26 14:43:38.362 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IConnectionPointContainer) ptr=0x229c25092c8 at 229b4cb6e50>
+2024-10-26 14:43:38.414 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechObjectToken) ptr=0x229c2509fa0 at 229b4cb6e50>)
+2024-10-26 14:43:38.414 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x229c2509fa0 at 229b4cb6e50>
+2024-10-26 14:43:38.416 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x229c25a3fd0 at 229b4cb6e50>)
+2024-10-26 14:43:38.416 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25fed80 at 229b4cb7050>
+2024-10-26 14:43:38.416 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x229c25e6a30 at 229b4cb70d0>)
+2024-10-26 14:43:38.416 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x229c25e6a30 at 229b4cb70d0>)
+2024-10-26 14:43:38.416 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:38.416 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:38.417 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b32466d0 at 229b4cb72d0>
+2024-10-26 14:43:38.417 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2024-10-26 14:43:38.417 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25e6a30 at 229b4cb73d0>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x229c25e6a30 at 229b4cb72d0>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6a30 at 229b4cb7250>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b32466d0 at 229b4cb7350>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229b4cb73d0>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6a30 at 229b4cb70d0>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x229c25fed80 at 229b4cb6f50>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x229c25a3fd0 at 229b4cb6e50>
+2024-10-26 14:43:38.418 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x229c25e6a30 at 229b4cb72d0>
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x229c25a33d0 at 229b4cb72d0>)
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25fefb0 at 229b4cb6f50>
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x229c25a33d0 at 229b4cb72d0>
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x229c25e6a30 at 229b4cb6fd0>)
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x229c25e6a30 at 229b4cb6fd0>)
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b32466d0 at 229b4cb71d0>
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25e6a30 at 229b4cb7350>
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x229c25e6a30 at 229b4cb71d0>
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6a30 at 229b4cb73d0>
+2024-10-26 14:43:38.419 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b32466d0 at 229b4cb7150>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229b4cb7350>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6a30 at 229b4cb6fd0>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x229c25e69a0 at 229b4cb6fd0>)
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x229c25e69a0 at 229b4cb6fd0>)
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b32466d0 at 229b4cb7150>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25e69a0 at 229b4cb7250>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x229c25e69a0 at 229b4cb7150>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e69a0 at 229b4cb7050>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b32466d0 at 229b4cb73d0>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229b4cb7250>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e69a0 at 229b4cb6fd0>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x229c25e6a30 at 229b4cb71d0>
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x229c25e6490 at 229b4cb6f50>)
+2024-10-26 14:43:38.420 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x229c25e6490 at 229b4cb6f50>)
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b32466d0 at 229b4cb7350>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25e6490 at 229b4cb7050>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x229c25e6490 at 229b4cb7350>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6490 at 229b4cb70d0>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b32466d0 at 229b4cb73d0>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229b4cb7050>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6490 at 229b4cb6f50>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x229c25e69a0 at 229b4cb7150>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x229c25fefb0 at 229b4cb6e50>
+2024-10-26 14:43:38.421 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x229c25e6490 at 229b4cb7350>
+2024-10-26 14:43:38.421 - RealTimeSTT: root - INFO - Initializing tokenizer nltk for language en
+2024-10-26 14:43:38.421 - RealTimeSTT: root - INFO - Initializing NLTK
+2024-10-26 14:43:38.668 - RealTimeSTT: root - INFO - loaded engine system
+2024-10-26 14:43:38.668 - RealTimeSTT: root - INFO - Setting listen time
+2024-10-26 14:43:38.668 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2024-10-26 14:43:38.920 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2024-10-26 14:43:41.300 - RealTimeSTT: root - INFO - voice activity detected
+2024-10-26 14:43:41.300 - RealTimeSTT: root - INFO - recording started
+2024-10-26 14:43:41.300 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2024-10-26 14:43:41.300 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2024-10-26 14:43:42.390 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:43:42.391 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2024-10-26 14:43:42.444 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2024-10-26 14:43:42.446 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2024-10-26 14:43:42.450 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2024-10-26 14:43:42.467 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2024-10-26 14:43:42.814 - RealTimeSTT: root - DEBUG - Model tiny.en completed transcription in 0.37 seconds
+2024-10-26 14:43:42.814 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:43:42.815 - RealTimeSTT: httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2024-10-26 14:43:42.815 - RealTimeSTT: httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000229BAF42690>
+2024-10-26 14:43:42.816 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-26 14:43:42.816 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_headers.complete
+2024-10-26 14:43:42.816 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-26 14:43:42.816 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_body.complete
+2024-10-26 14:43:42.816 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-26 14:43:43.868 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 26 Oct 2024 11:43:43 GMT'), (b'Content-Length', b'431')])
+2024-10-26 14:43:43.868 - RealTimeSTT: httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-26 14:43:43.868 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-26 14:43:43.868 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_body.complete
+2024-10-26 14:43:43.868 - RealTimeSTT: httpcore.http11 - DEBUG - response_closed.started
+2024-10-26 14:43:43.868 - RealTimeSTT: httpcore.http11 - DEBUG - response_closed.complete
+2024-10-26 14:43:43.869 - RealTimeSTT: root - INFO - stream start
+2024-10-26 14:43:43.869 - RealTimeSTT: root - DEBUG - Opening stream for wave audio chunks, pyFormat: 8, pyChannels: 1, pySampleRate: 22050
+2024-10-26 14:43:43.913 - RealTimeSTT: root - INFO - Time to split sentences: 0.002862215042114258
+2024-10-26 14:43:43.913 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.913 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.913 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.913 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.913 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.913 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.914 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.915 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.915 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.915 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.918 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.919 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.919 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.919 - RealTimeSTT: root - INFO - Time to split sentences: 0.0004258155822753906
+2024-10-26 14:43:43.919 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechObjectTokens) ptr=0x229c25a33d0 at 229b4ccc0d0>)
+2024-10-26 14:43:43.919 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.919 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25fefb0 at 229b4ccc050>
+2024-10-26 14:43:43.919 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.919 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x229c25e6ac0 at 229bbed8950>)
+2024-10-26 14:43:43.919 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.919 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x229c25e6ac0 at 229bbed8950>)
+2024-10-26 14:43:43.919 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.920 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:43.920 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.920 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:43.920 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.920 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b32466d0 at 229bbed8dd0>
+2024-10-26 14:43:43.920 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.920 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2024-10-26 14:43:43.920 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25e6ac0 at 229bbed8ed0>
+2024-10-26 14:43:43.920 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:43.920 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.920 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2024-10-26 14:43:43.920 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x229c25e6ac0 at 229bbed90d0>
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6ac0 at 229bbed8d50>
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b32466d0 at 229bbed8e50>
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed8ed0>
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6ac0 at 229bbed8950>
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(IDispatch) ptr=0x229c25e6520 at 229bbed8950>)
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IDispatch) ptr=0x229c25e6520 at 229bbed8950>)
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b32466d0 at 229bbed8e50>
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {C74A3ADC-B727-4500-A84A-B526721C8B8C}
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25e6520 at 229bbed8dd0>
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechObjectToken'>
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.922 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechObjectToken) ptr=0x229c25e6520 at 229bbed8fd0>
+2024-10-26 14:43:43.924 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6520 at 229bbed8b50>
+2024-10-26 14:43:43.924 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b32466d0 at 229bbed8d50>
+2024-10-26 14:43:43.924 - RealTimeSTT: root - INFO - Time to split sentences: 0.0016160011291503906
+2024-10-26 14:43:43.924 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed8dd0>
+2024-10-26 14:43:43.924 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.924 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e6520 at 229bbed8950>
+2024-10-26 14:43:43.924 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.924 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x229c25e6ac0 at 229bbed90d0>
+2024-10-26 14:43:43.924 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.924 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IEnumVARIANT) ptr=0x229c25fefb0 at 229bbed8ad0>
+2024-10-26 14:43:43.924 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectTokens) ptr=0x229c25a33d0 at 229b4ccc0d0>
+2024-10-26 14:43:43.924 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechObjectToken) ptr=0x229c25e6520 at 229bbed8fd0>
+2024-10-26 14:43:43.924 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.925 - RealTimeSTT: root - INFO - Time to split sentences: 0.001117706298828125
+2024-10-26 14:43:43.925 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.925 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.925 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.925 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:43:43.925 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:43:43.925 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.926 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.926 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.926 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.926 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.926 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.926 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:43.926 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229c25e00b0 at 229b4ccc050>)
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbed8ad0>
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25e00b0 at 229bbed8950>
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229c25e00b0 at 229bbed8ad0>
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229c25e00b0 at 229bbed8fd0>
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbed90d0>
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed8950>
+2024-10-26 14:43:43.927 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229c25e00b0 at 229b4ccc050>
+2024-10-26 14:43:43.945 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229b4ccc050>)
+2024-10-26 14:43:43.956 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229c25e00b0 at 229bbed8ad0>
+2024-10-26 14:43:43.956 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229b4ccc050>
+2024-10-26 14:43:44.129 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:43:44.129 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:43:44.129 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc90b0 at 229bbed89d0>)
+2024-10-26 14:43:44.130 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:44.130 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:44.130 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbed8c50>
+2024-10-26 14:43:44.130 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:43:44.130 - RealTimeSTT: root - INFO - Audio stream start, latency to first chunk: 0.26s
+2024-10-26 14:43:44.130 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc90b0 at 229bbed8d50>
+2024-10-26 14:43:44.131 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:44.131 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:43:44.131 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc90b0 at 229bbed8c50>
+2024-10-26 14:43:44.131 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc90b0 at 229bbed8dd0>
+2024-10-26 14:43:44.131 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbed8ed0>
+2024-10-26 14:43:44.131 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed8d50>
+2024-10-26 14:43:44.131 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc90b0 at 229bbed89d0>
+2024-10-26 14:43:44.132 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed89d0>)
+2024-10-26 14:43:44.137 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc90b0 at 229bbed8c50>
+2024-10-26 14:43:44.137 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed89d0>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc9530 at 229bbed8d50>)
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbed8ed0>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9530 at 229bbed8b50>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc9530 at 229bbed8ed0>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc9530 at 229bbed90d0>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbed8dd0>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed8b50>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9530 at 229bbed8d50>
+2024-10-26 14:43:44.311 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed8d50>)
+2024-10-26 14:43:44.323 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc9530 at 229bbed8ed0>
+2024-10-26 14:43:44.323 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed8d50>
+2024-10-26 14:43:52.432 - RealTimeSTT: root - INFO - stream stop
+2024-10-26 14:43:52.432 - RealTimeSTT: root - INFO - recording started
+2024-10-26 14:43:52.432 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'recording'
+2024-10-26 14:43:52.434 - RealTimeSTT: root - INFO - Setting listen time
+2024-10-26 14:43:52.434 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2024-10-26 14:43:53.270 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:43:53.270 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2024-10-26 14:43:53.345 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2024-10-26 14:43:53.347 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2024-10-26 14:43:53.349 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2024-10-26 14:43:53.389 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2024-10-26 14:43:53.648 - RealTimeSTT: root - DEBUG - Model tiny.en completed transcription in 0.30 seconds
+2024-10-26 14:43:53.648 - RealTimeSTT: root - INFO - Setting listen time
+2024-10-26 14:43:53.648 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'listening'
+2024-10-26 14:43:53.649 - RealTimeSTT: root - DEBUG - Waiting for recording start
+2024-10-26 14:43:53.839 - RealTimeSTT: root - INFO - voice activity detected
+2024-10-26 14:43:53.840 - RealTimeSTT: root - INFO - recording started
+2024-10-26 14:43:53.840 - RealTimeSTT: root - INFO - State changed from 'listening' to 'recording'
+2024-10-26 14:43:53.840 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2024-10-26 14:43:54.930 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:43:54.931 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2024-10-26 14:43:55.015 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2024-10-26 14:43:55.017 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2024-10-26 14:43:55.035 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2024-10-26 14:43:55.061 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2024-10-26 14:43:56.167 - RealTimeSTT: root - DEBUG - Model tiny.en completed transcription in 1.15 seconds
+2024-10-26 14:43:56.168 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:43:56.168 - RealTimeSTT: httpcore.connection - DEBUG - close.started
+2024-10-26 14:43:56.168 - RealTimeSTT: httpcore.connection - DEBUG - close.complete
+2024-10-26 14:43:56.168 - RealTimeSTT: httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2024-10-26 14:43:56.169 - RealTimeSTT: httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000229BBEF9010>
+2024-10-26 14:43:56.169 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-26 14:43:56.169 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_headers.complete
+2024-10-26 14:43:56.169 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-26 14:43:56.169 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_body.complete
+2024-10-26 14:43:56.169 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-26 14:43:57.238 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 26 Oct 2024 11:43:57 GMT'), (b'Content-Length', b'458')])
+2024-10-26 14:43:57.238 - RealTimeSTT: httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-26 14:43:57.238 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-26 14:43:57.238 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_body.complete
+2024-10-26 14:43:57.238 - RealTimeSTT: httpcore.http11 - DEBUG - response_closed.started
+2024-10-26 14:43:57.238 - RealTimeSTT: httpcore.http11 - DEBUG - response_closed.complete
+2024-10-26 14:43:57.238 - RealTimeSTT: root - INFO - stream start
+2024-10-26 14:43:57.238 - RealTimeSTT: root - DEBUG - Opening stream for wave audio chunks, pyFormat: 8, pyChannels: 1, pySampleRate: 22050
+2024-10-26 14:43:57.273 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.273 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.273 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.273 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.274 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc9b30 at 229bbed9750>)
+2024-10-26 14:43:57.274 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.275 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:57.275 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.275 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:57.275 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.275 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbed99d0>
+2024-10-26 14:43:57.275 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.275 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:43:57.276 - RealTimeSTT: root - INFO - Time to split sentences: 0.0010037422180175781
+2024-10-26 14:43:57.276 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9b30 at 229bbed9ad0>
+2024-10-26 14:43:57.276 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.276 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:57.276 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.276 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:43:57.276 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.276 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc9b30 at 229bbed9cd0>
+2024-10-26 14:43:57.276 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.276 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc9b30 at 229bbed9950>
+2024-10-26 14:43:57.276 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.276 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbed9a50>
+2024-10-26 14:43:57.276 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.276 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed9ad0>
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0010004043579101562
+2024-10-26 14:43:57.277 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9b30 at 229bbed9750>
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed9750>)
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.277 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.278 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.00099945068359375
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.279 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:43:57.280 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc9b30 at 229bbed9cd0>
+2024-10-26 14:43:57.280 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed9750>
+2024-10-26 14:43:57.437 - RealTimeSTT: root - INFO - Audio stream start, latency to first chunk: 0.20s
+2024-10-26 14:43:57.437 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:43:57.437 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:43:57.437 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc9b30 at 229bbed9750>)
+2024-10-26 14:43:57.437 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbed9850>
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9b30 at 229bbed99d0>
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc9b30 at 229bbed9850>
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc9b30 at 229bbed9950>
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbed9c50>
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed99d0>
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9b30 at 229bbed9750>
+2024-10-26 14:43:57.438 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed9750>)
+2024-10-26 14:43:57.440 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc9b30 at 229bbed9850>
+2024-10-26 14:43:57.440 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed9750>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc97d0 at 229bbed97d0>)
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbed9ad0>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc97d0 at 229bbed9950>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc97d0 at 229bbed9ad0>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc97d0 at 229bbed9cd0>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbed9c50>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed9950>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc97d0 at 229bbed97d0>
+2024-10-26 14:43:57.587 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed97d0>)
+2024-10-26 14:43:57.598 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc97d0 at 229bbed9ad0>
+2024-10-26 14:43:57.598 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed97d0>
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc95f0 at 229bbed97d0>)
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbed9850>
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc95f0 at 229bbed9c50>
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc95f0 at 229bbed9850>
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc95f0 at 229bbed9ad0>
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbed99d0>
+2024-10-26 14:43:57.764 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbed9c50>
+2024-10-26 14:43:57.765 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc95f0 at 229bbed97d0>
+2024-10-26 14:43:57.765 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed97d0>)
+2024-10-26 14:43:57.775 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc95f0 at 229bbed9850>
+2024-10-26 14:43:57.775 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbed97d0>
+2024-10-26 14:44:07.281 - RealTimeSTT: root - INFO - stream stop
+2024-10-26 14:44:07.281 - RealTimeSTT: root - INFO - recording started
+2024-10-26 14:44:07.281 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'recording'
+2024-10-26 14:44:07.282 - RealTimeSTT: root - INFO - Setting listen time
+2024-10-26 14:44:07.284 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2024-10-26 14:44:09.839 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:44:09.839 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2024-10-26 14:44:09.915 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2024-10-26 14:44:09.916 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2024-10-26 14:44:09.935 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2024-10-26 14:44:09.969 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2024-10-26 14:44:10.261 - RealTimeSTT: root - DEBUG - Model tiny.en completed transcription in 0.35 seconds
+2024-10-26 14:44:10.262 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:44:10.262 - RealTimeSTT: httpcore.connection - DEBUG - close.started
+2024-10-26 14:44:10.262 - RealTimeSTT: httpcore.connection - DEBUG - close.complete
+2024-10-26 14:44:10.262 - RealTimeSTT: httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2024-10-26 14:44:10.262 - RealTimeSTT: httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000229BBA8D690>
+2024-10-26 14:44:10.262 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-26 14:44:10.263 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_headers.complete
+2024-10-26 14:44:10.263 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-26 14:44:10.263 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_body.complete
+2024-10-26 14:44:10.263 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-26 14:44:11.233 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 26 Oct 2024 11:44:11 GMT'), (b'Content-Length', b'398')])
+2024-10-26 14:44:11.233 - RealTimeSTT: httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-26 14:44:11.233 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-26 14:44:11.233 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_body.complete
+2024-10-26 14:44:11.233 - RealTimeSTT: httpcore.http11 - DEBUG - response_closed.started
+2024-10-26 14:44:11.233 - RealTimeSTT: httpcore.http11 - DEBUG - response_closed.complete
+2024-10-26 14:44:11.233 - RealTimeSTT: root - INFO - stream start
+2024-10-26 14:44:11.233 - RealTimeSTT: root - DEBUG - Opening stream for wave audio chunks, pyFormat: 8, pyChannels: 1, pySampleRate: 22050
+2024-10-26 14:44:11.264 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.264 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.264 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:44:11.264 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.264 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:44:11.264 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.264 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.264 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc9bf0 at 229bbeda050>)
+2024-10-26 14:44:11.265 - RealTimeSTT: root - INFO - Time to split sentences: 0.00011491775512695312
+2024-10-26 14:44:11.265 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:44:11.265 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.266 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:44:11.266 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbeda2d0>
+2024-10-26 14:44:11.266 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:44:11.266 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.266 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9bf0 at 229bbeda3d0>
+2024-10-26 14:44:11.266 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:44:11.266 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:44:11.266 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.266 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc9bf0 at 229bbeda2d0>
+2024-10-26 14:44:11.266 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.266 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.266 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc9bf0 at 229bbeda250>
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbeda350>
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbeda3d0>
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9bf0 at 229bbeda050>
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.267 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda050>)
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.268 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.00099945068359375
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.269 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:11.271 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc9bf0 at 229bbeda2d0>
+2024-10-26 14:44:11.271 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda050>
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:44:11.460 - RealTimeSTT: root - INFO - Audio stream start, latency to first chunk: 0.23s
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc99b0 at 229bbeda350>)
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbeda1d0>
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc99b0 at 229bbeda0d0>
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc99b0 at 229bbeda1d0>
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc99b0 at 229bbeda150>
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbeda3d0>
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbeda0d0>
+2024-10-26 14:44:11.460 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc99b0 at 229bbeda350>
+2024-10-26 14:44:11.461 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda350>)
+2024-10-26 14:44:11.470 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc99b0 at 229bbeda1d0>
+2024-10-26 14:44:11.470 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda350>
+2024-10-26 14:44:11.642 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:44:11.642 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:44:11.643 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc9110 at 229bbeda050>)
+2024-10-26 14:44:11.643 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:44:11.643 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:44:11.643 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbeda250>
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9110 at 229bbeda150>
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc9110 at 229bbeda250>
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc9110 at 229bbeda2d0>
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbeda3d0>
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbeda150>
+2024-10-26 14:44:11.644 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc9110 at 229bbeda050>
+2024-10-26 14:44:11.645 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda050>)
+2024-10-26 14:44:11.659 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc9110 at 229bbeda250>
+2024-10-26 14:44:11.659 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda050>
+2024-10-26 14:44:18.261 - RealTimeSTT: root - INFO - stream stop
+2024-10-26 14:44:18.261 - RealTimeSTT: root - INFO - recording started
+2024-10-26 14:44:18.261 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'recording'
+2024-10-26 14:44:18.264 - RealTimeSTT: root - INFO - Setting listen time
+2024-10-26 14:44:18.264 - RealTimeSTT: root - DEBUG - Waiting for recording stop
+2024-10-26 14:44:19.569 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:44:19.569 - RealTimeSTT: root - INFO - State changed from 'recording' to 'inactive'
+2024-10-26 14:44:19.577 - RealTimeSTT: root - INFO - State changed from 'inactive' to 'transcribing'
+2024-10-26 14:44:19.581 - RealTimeSTT: root - DEBUG - Adding transcription request, no early transcription started
+2024-10-26 14:44:19.587 - RealTimeSTT: root - DEBUG - Receive from parent_transcription_pipe after sendiung transcription request, transcribe_count: 1
+2024-10-26 14:44:19.629 - RealTimeSTT: root - INFO - State changed from 'transcribing' to 'inactive'
+2024-10-26 14:44:19.882 - RealTimeSTT: root - DEBUG - Model tiny.en completed transcription in 0.30 seconds
+2024-10-26 14:44:19.882 - RealTimeSTT: root - INFO - recording stopped
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.connection - DEBUG - close.started
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.connection - DEBUG - close.complete
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.connection - DEBUG - connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x00000229BAF3B790>
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_headers.complete
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.http11 - DEBUG - send_request_body.complete
+2024-10-26 14:44:19.882 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-10-26 14:44:20.609 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=utf-8'), (b'Date', b'Sat, 26 Oct 2024 11:44:20 GMT'), (b'Content-Length', b'333')])
+2024-10-26 14:44:20.609 - RealTimeSTT: httpx - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-26 14:44:20.609 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-10-26 14:44:20.609 - RealTimeSTT: httpcore.http11 - DEBUG - receive_response_body.complete
+2024-10-26 14:44:20.609 - RealTimeSTT: httpcore.http11 - DEBUG - response_closed.started
+2024-10-26 14:44:20.610 - RealTimeSTT: httpcore.http11 - DEBUG - response_closed.complete
+2024-10-26 14:44:20.610 - RealTimeSTT: root - INFO - stream start
+2024-10-26 14:44:20.610 - RealTimeSTT: root - DEBUG - Opening stream for wave audio chunks, pyFormat: 8, pyChannels: 1, pySampleRate: 22050
+2024-10-26 14:44:20.641 - RealTimeSTT: root - INFO - Time to split sentences: 0.0009701251983642578
+2024-10-26 14:44:20.641 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:20.641 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:20.641 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:20.641 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:20.641 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:20.641 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:20.641 - RealTimeSTT: root - INFO - Time to split sentences: 0.0
+2024-10-26 14:44:20.641 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:44:20.641 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:44:20.641 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc98f0 at 229bbeda8d0>)
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbedab50>
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc98f0 at 229bbedac50>
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc98f0 at 229bbedab50>
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc98f0 at 229bbedaad0>
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbedabd0>
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbedac50>
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc98f0 at 229bbeda8d0>
+2024-10-26 14:44:20.642 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda8d0>)
+2024-10-26 14:44:20.646 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc98f0 at 229bbedab50>
+2024-10-26 14:44:20.646 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda8d0>
+2024-10-26 14:44:20.786 - RealTimeSTT: root - INFO - Audio stream start, latency to first chunk: 0.18s
+2024-10-26 14:44:20.786 - RealTimeSTT: comtypes.client - DEBUG - SAPI.SPFileStream -> {947812B3-2AE1-4644-BA86-9E90DED7EC91}
+2024-10-26 14:44:20.786 - RealTimeSTT: comtypes.client - DEBUG - CoCreateInstance({947812B3-2AE1-4644-BA86-9E90DED7EC91}, clsctx=None, interface=None)
+2024-10-26 14:44:20.786 - RealTimeSTT: comtypes.client - DEBUG - GetBestInterface(<POINTER(IUnknown) ptr=0x229b5fc96b0 at 229bbeda8d0>)
+2024-10-26 14:44:20.787 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo, trying IProvideClassInfo2
+2024-10-26 14:44:20.787 - RealTimeSTT: comtypes.client - DEBUG - Does NOT implement IProvideClassInfo/IProvideClassInfo2
+2024-10-26 14:44:20.787 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b3246780 at 229bbeda9d0>
+2024-10-26 14:44:20.787 - RealTimeSTT: comtypes.client - DEBUG - Default interface is {AF67F125-AB39-4E93-B4A2-CC2E66E182A7}
+2024-10-26 14:44:20.787 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc96b0 at 229bbedaad0>
+2024-10-26 14:44:20.787 - RealTimeSTT: comtypes.client._generate - DEBUG - GetModule(TLIBATTR(GUID={C866CA3A-32F7-11D2-9602-00C04F8EE628}, Version=5.4, LCID=0, FLags=0x8))
+2024-10-26 14:44:20.787 - RealTimeSTT: comtypes.client - DEBUG - Implements default interface from typeinfo <class 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.ISpeechFileStream'>
+2024-10-26 14:44:20.787 - RealTimeSTT: comtypes.client - DEBUG - Final result is <POINTER(ISpeechFileStream) ptr=0x229b5fc96b0 at 229bbeda9d0>
+2024-10-26 14:44:20.788 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IDispatch) ptr=0x229b5fc96b0 at 229bbedaa50>
+2024-10-26 14:44:20.788 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeInfo) ptr=0x229b3246780 at 229bbedabd0>
+2024-10-26 14:44:20.788 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ITypeLib) ptr=0x229b3a19bf0 at 229bbedaad0>
+2024-10-26 14:44:20.788 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(IUnknown) ptr=0x229b5fc96b0 at 229bbeda8d0>
+2024-10-26 14:44:20.788 - RealTimeSTT: comtypes.client - DEBUG - wrap_outparam(<POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda8d0>)
+2024-10-26 14:44:20.796 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechFileStream) ptr=0x229b5fc96b0 at 229bbeda9d0>
+2024-10-26 14:44:20.797 - RealTimeSTT: comtypes._post_coinit.unknwn - DEBUG - Release <POINTER(ISpeechBaseStream) ptr=0x229b5fb79f8 at 229bbeda8d0>
